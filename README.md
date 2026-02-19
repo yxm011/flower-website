@@ -40,9 +40,19 @@ npm run preview
 
 ## Deployment
 
-Sayt GitHub Pages-də host olunur və avtomatik deploy edilir.
+Bu sayt həm GitHub Pages, həm də Vercel-də deploy edilə bilər.
 
-Ətraflı deployment təlimatları üçün [DEPLOYMENT.md](./DEPLOYMENT.md) faylına baxın.
+### Deployment Seçimləri:
+
+- **GitHub Pages**: [DEPLOYMENT.md](./DEPLOYMENT.md) - https://yxm011.github.io/flower-website/
+- **Vercel** (Tövsiyə olunur): [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md) - Daha sürətli və asan
+
+### Vercel-ə Tez Deploy:
+
+1. https://vercel.com/new saytına gedin
+2. GitHub repository-ni import edin: `https://github.com/yxm011/flower-website`
+3. "Deploy" düyməsinə basın
+4. 1-2 dəqiqə gözləyin - Hazırdır! ✅
 
 ## Əlaqə Məlumatları
 
