@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -9,10 +9,21 @@ import Home from './pages/Home'
 import Catalog from './pages/Catalog'
 import AboutPage from './pages/AboutPage'
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
 function App() {
   return (
     <Router>
       <CartProvider>
+        <ScrollToTop />
         <div className="min-h-screen bg-gradient-to-br from-pink-50 via-pink-100 to-pink-200">
           <Header />
           <Routes>

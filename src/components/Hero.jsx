@@ -52,28 +52,28 @@ const Hero = () => {
           </div>
 
           <div className="relative">
-            <div className="relative bg-gradient-to-br from-pink-200 to-pink-300 rounded-3xl p-8 sm:p-12 shadow-2xl">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-pink-300 rounded-full blur-3xl opacity-50"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-pink-400 rounded-full blur-3xl opacity-50"></div>
+            <div className="relative bg-gradient-to-br from-pink-200 to-pink-300 rounded-3xl p-8 sm:p-12 shadow-2xl overflow-hidden">
+              <div className="absolute top-0 right-0 w-48 h-48 sm:w-64 sm:h-64 bg-pink-300 rounded-full blur-3xl opacity-50"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 sm:w-48 sm:h-48 bg-pink-400 rounded-full blur-3xl opacity-50"></div>
               
-              <div className="relative z-10 text-center">
-                <div className="text-8xl sm:text-9xl mb-4">🌸</div>
-                <p className="text-gray-700 text-lg font-medium">Təzə Gül Kolleksiyası</p>
+              <div className="relative z-10 text-center py-8 sm:py-12">
+                <div className="text-7xl sm:text-8xl lg:text-9xl mb-4">🌸</div>
+                <p className="text-gray-700 text-base sm:text-lg font-medium">Təzə Gül Kolleksiyası</p>
               </div>
 
-              <div className="absolute top-8 right-8 bg-white rounded-2xl p-4 sm:p-6 shadow-xl">
-                <h3 className="font-bold text-gray-900 mb-2">Xüsusi Buket Dizaynı</h3>
-                <p className="text-sm text-gray-600 mb-3">Unikal və fərdiləşdirilmiş buketlər</p>
-                <div className="flex gap-2">
-                  <span className="text-2xl">🌹</span>
-                  <span className="text-2xl">🌺</span>
-                  <span className="text-2xl">🌷</span>
+              <div className="hidden sm:block absolute top-4 right-4 lg:top-8 lg:right-8 bg-white rounded-2xl p-3 sm:p-4 lg:p-6 shadow-xl max-w-[200px] lg:max-w-none">
+                <h3 className="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Xüsusi Buket Dizaynı</h3>
+                <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">Unikal və fərdiləşdirilmiş buketlər</p>
+                <div className="flex gap-1 sm:gap-2">
+                  <span className="text-xl sm:text-2xl">🌹</span>
+                  <span className="text-xl sm:text-2xl">🌺</span>
+                  <span className="text-xl sm:text-2xl">🌷</span>
                 </div>
               </div>
 
-              <div className="absolute bottom-8 left-8 bg-white rounded-2xl p-4 shadow-xl">
-                <h3 className="font-bold text-gray-900 mb-1">Tədbir Çiçək Xidmətləri</h3>
-                <p className="text-sm text-gray-600">Çiçək Abunəliyi</p>
+              <div className="hidden sm:block absolute bottom-4 left-4 lg:bottom-8 lg:left-8 bg-white rounded-2xl p-3 sm:p-4 shadow-xl max-w-[180px] lg:max-w-none">
+                <h3 className="font-bold text-gray-900 mb-1 text-sm sm:text-base">Tədbir Çiçək Xidmətləri</h3>
+                <p className="text-xs sm:text-sm text-gray-600">Çiçək Abunəliyi</p>
               </div>
             </div>
           </div>
